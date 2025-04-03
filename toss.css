@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #f5f6f8;
+    color: #222;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    background-color: #f5f6f8;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 26px;
+    height: 26px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.logo-text {
+    color: #8e9299;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.header-icon {
+    color: #a5a9af;
+    font-size: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 18px;
+    margin: 14px 16px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.toss-bank-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 4px;
+}
+
+.chevron-right {
+    color: #cecece;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+}
+
+.account-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f2f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    overflow: hidden;
+}
+
+.toss-bank-icon {
+    background-color: #f0f3ff;
+}
+
+.toss-bank-icon-inner {
+    width: 24px;
+    height: 24px;
+    background-color: #3182f6;
+    border-radius: 50%;
+    transform: translateX(-6px);
+}
+
+.dalara-icon {
+    background-color: #5f5f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dalara-icon-text {
+    color: #ffd25e;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.samsung-icon {
+    background-color: #1428a0;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.samsung-icon:after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 10px;
+    background-color: #ed1c24;
+    bottom: 0;
+}
+
+.account-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.account-balance {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.account-buttons {
+    display: flex;
+}
+
+.send-button {
+    background-color: #f2f4f6;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.stock-info {
+    display: flex;
+    align-items: center;
+}
+
+.stock-count {
+    color: #888;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.stock-percent {
+    color: #f45452;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #f2f2f2;
+    margin: 16px 0;
+}
+
+.accounts-link {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.accounts-link span {
+    margin: 0 6px;
+    color: #ccc;
+}
+
+.accounts-link-text {
+    display: flex;
+    align-items: center;
+}
+
+.monthly-spending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    background-color: #267c7a;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    position: relative;
+    margin-right: 14px;
+}
+
+.card-icon-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 42px;
+    height: 42px;
+    background-color: #e2b279;
+    border-radius: 8px;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+.d3-icon {
+    background-color: #4186f6;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-notification {
+    background-color: #edf4ff;
+    color: #3182f6;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 100px;
+}
+
+.usage-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.score-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #3182f6;
+    color: #3182f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.score-text {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quick-links {
+    display: flex;
+    border-top: 1px solid #eee;
+}
+
+.quick-link {
+    flex: 1;
+    text-align: center;
+    padding: 14px 0;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+}
+
+.quick-link:last-child {
+    border-right: none;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 420px;
+    border-top: 1px solid #eee;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.benefits-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ddd;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.tossPay-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+
+.tossPay-icon:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 0 0 12px 12px;
+    top: -4px;
+    left: 6px;
+}
+
+.stock-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ddd;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 25% 50%);
+}
+
+.all-icon {
+    width: 20px;
+    height: 3px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.all-icon:before,
+.all-icon:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #ddd;
+}
+
+.all-icon:before {
+    top: -6px;
+}
+
+.all-icon:after {
+    bottom: -6px;
+}
+
+.nav-label {
+    font-size: 12px;
+    color: #888;
+}
+
+.nav-item.active .nav-label {
+    color: #000;
+    font-weight: 600;
+}
